@@ -3,59 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portefólio</title>
+    <title>Portefólio Profissional</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
         }
         header {
-            background: #333;
-            color: white;
+            background-color: #1f1f1f;
             padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+        .logo {
             font-size: 24px;
+            font-weight: bold;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .services, .projects {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .service-box, .project-item {
+            background-color: #1f1f1f;
+            margin: 20px;
             padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .projeto {
-            border: 1px solid #ddd;
-            margin: 15px 0;
-            padding: 15px;
+            border-radius: 10px;
         }
         footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #333;
-            color: white;
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
         }
     </style>
 </head>
 <body>
-    <header>O Meu Portefólio</header>
-    <div class="container">
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor web em crescimento! Aqui estão alguns dos meus projetos.</p>
-        
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1.</p>
+    <header>
+        <nav>
+            <div class="logo">O Meu Portefólio</div>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Especialista em Web Design</h1>
+            <p>Transformo ideias em experiências digitais incríveis.</p>
+            <a href="#contato" class="btn">Fala Comigo</a>
         </div>
-        <div class="projeto">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
+    </header>
+
+    <section id="servicos" class="services">
+        <h2>Os Meus Serviços</h2>
+        <div class="service-box">
+            <h3>Design UI/UX</h3>
+            <p>Criação de interfaces elegantes e intuitivas.</p>
         </div>
-    </div>
+        <div class="service-box">
+            <h3>Desenvolvimento Web</h3>
+            <p>Construção de websites modernos e responsivos.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <h2>Os Meus Projetos</h2>
+        <div class="project-item">Projeto 1</div>
+        <div class="project-item">Projeto 2</div>
+    </section>
+
     <footer>
-        © 2025 - Criado por Mim
+        <p>&copy; 2025 Tomás Fernandes - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
